@@ -1,4 +1,6 @@
-This library does matrix vector product for H2 matrices with well-separated admissibility condition (\eta=\sqrt(2)).
+This library constructs a H2 matrix representation using a new Nested Cross Approximation for problems arising in 2D.
+
+It then performs H2 matrix vector product.
 
 The low-rank approximations of matrix sub-blocks is constructed using a new Nested Cross Approximation.
 
@@ -7,6 +9,8 @@ The charges are distributed at the tensor product Chebyshev nodes of the square 
 The matrix entries are to be defined in function "getMatrixEntry(i,j)" of the kernel.hpp file.
 
 The vector to be applied to the matrix is to be defined in VectorXd "b" of the testFMM2D_cheb.cpp.
+
+A well-separated admissibility condition or \eta=\sqrt(2) is used.
 
 It takes the following inputs at run-time.
 
